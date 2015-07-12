@@ -1,0 +1,7 @@
+Debug/*
+Release/*
+*.sdf
+*/Debug/*
+*/Release/*
+*.v12.suo
+
