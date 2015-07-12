@@ -11,8 +11,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{9D219441-B9F9-4C17-BDB8-60634E897C0E}</ProjectGuid>
-    <RootNamespace>My02_image</RootNamespace>
+    <ProjectGuid>{D8F90174-80D4-49BF-8E68-F6707F5332FD}</ProjectGuid>
+    <RootNamespace>_03_Event_Driven_Programming</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -55,6 +55,9 @@
     <PostBuildEvent>
       <Command>COPY /y C:\SDL2-2.0.3\lib\x86\SDL2.dll "$(ProjectDir)"</Command>
     </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Copy SDL DLL to build folder.</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -71,7 +74,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="SDL_Image.cpp" />
+    <ClCompile Include="SDL_Events.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

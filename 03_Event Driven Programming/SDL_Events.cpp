@@ -21,7 +21,7 @@ SDL_Window* gWindow = NULL;
 SDL_Surface* gScreenSurface = NULL;
 
 //The image we will load and show on the screen
-SDL_Surface* gHelloWorld = NULL;
+SDL_Surface* gXOut = NULL;
 
 bool init()
 {
@@ -59,8 +59,8 @@ bool loadMedia()
 	bool success = true;
 
 	//Load splash image
-	gHelloWorld = SDL_LoadBMP("preview.bmp");
-	if (gHelloWorld == NULL)
+	gXOut = SDL_LoadBMP("preview.bmp");
+	if (gXOut == NULL)
 	{
 		printf("Unable to load image %s! SDL Error: %s\n", "preview.png", SDL_GetError());
 		success = false;
@@ -72,8 +72,8 @@ bool loadMedia()
 void close()
 {
 	//Deallocate surface
-	SDL_FreeSurface(gHelloWorld);
-	gHelloWorld = NULL;
+	SDL_FreeSurface(gXOut);
+	gXOut = NULL;
 
 	//Destroy window
 	SDL_DestroyWindow(gWindow);
@@ -99,12 +99,21 @@ int main(int argc, char* args[])
 		}
 		else
 		{
-			//Apply the image
-			SDL_BlitSurface(gHelloWorld, NULL, gScreenSurface, NULL);
-			//Update the surface
-			SDL_UpdateWindowSurface(gWindow);
-			//Wait two seconds
-			SDL_Delay(2000);
+			//Main loop flag
+			bool quit = false;
+			//Event handler
+			SDL_Event e;
+			while (!quit) {
+				//Apply the image
+				while (SDL_PollEvent(&e) != 0) {
+					if (e.type == SDL_QUIT) {
+						quit = true;
+					}
+				}
+				SDL_BlitSurface(gXOut, NULL, gScreenSurface, NULL);
+				//Update the surface
+				SDL_UpdateWindowSurface(gWindow);
+			}
 		}
 	}
 

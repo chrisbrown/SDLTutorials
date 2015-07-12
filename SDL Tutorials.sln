@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_Hello SDL", "Hello SDL\Hello SDL.vcxproj", "{A13B2923-D44A-4F11-AE0E-53ABF5C26327}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_Hello SDL", "01_Hello SDL\Hello SDL.vcxproj", "{A13B2923-D44A-4F11-AE0E-53ABF5C26327}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_image", "02_image\02_image.vcxproj", "{9D219441-B9F9-4C17-BDB8-60634E897C0E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03_Event Driven Programming", "03_Event Driven Programming\03_Event Driven Programming.vcxproj", "{D8F90174-80D4-49BF-8E68-F6707F5332FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{9D219441-B9F9-4C17-BDB8-60634E897C0E}.Debug|Win32.Build.0 = Debug|Win32
 		{9D219441-B9F9-4C17-BDB8-60634E897C0E}.Release|Win32.ActiveCfg = Release|Win32
 		{9D219441-B9F9-4C17-BDB8-60634E897C0E}.Release|Win32.Build.0 = Release|Win32
+		{D8F90174-80D4-49BF-8E68-F6707F5332FD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D8F90174-80D4-49BF-8E68-F6707F5332FD}.Debug|Win32.Build.0 = Debug|Win32
+		{D8F90174-80D4-49BF-8E68-F6707F5332FD}.Release|Win32.ActiveCfg = Release|Win32
+		{D8F90174-80D4-49BF-8E68-F6707F5332FD}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

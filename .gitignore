@@ -4,4 +4,4 @@ Release/*
 */Debug/*
 */Release/*
 *.v12.suo
-
+*/SDL2.dll
