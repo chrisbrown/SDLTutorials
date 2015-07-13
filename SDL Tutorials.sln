@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_image", "02_image\02_ima
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03_Event Driven Programming", "03_Event Driven Programming\03_Event Driven Programming.vcxproj", "{D8F90174-80D4-49BF-8E68-F6707F5332FD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04_Key Presses", "04_Key Presses\04_Key Presses.vcxproj", "{973F6C44-B70E-4C4B-89D6-9043BDC777B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -27,6 +29,10 @@ Global
 		{D8F90174-80D4-49BF-8E68-F6707F5332FD}.Debug|Win32.Build.0 = Debug|Win32
 		{D8F90174-80D4-49BF-8E68-F6707F5332FD}.Release|Win32.ActiveCfg = Release|Win32
 		{D8F90174-80D4-49BF-8E68-F6707F5332FD}.Release|Win32.Build.0 = Release|Win32
+		{973F6C44-B70E-4C4B-89D6-9043BDC777B9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{973F6C44-B70E-4C4B-89D6-9043BDC777B9}.Debug|Win32.Build.0 = Debug|Win32
+		{973F6C44-B70E-4C4B-89D6-9043BDC777B9}.Release|Win32.ActiveCfg = Release|Win32
+		{973F6C44-B70E-4C4B-89D6-9043BDC777B9}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
